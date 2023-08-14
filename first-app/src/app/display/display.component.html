@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+        <td>Password</td>
+        <td>Confirm Password</td>
+        <!--<button type="submit" (click)="displayuser()">display user</button>
+        -->
+        </thead>
+    <tbody *ngFor = "let x of userz">
+        <td>{{x.firstname}}</td>
+        <td>{{x.lastname}}</td>
+        <td>{{x.email}}</td>
+        <td>{{x.password}}</td>
+        <td>{{x.cpassword}}</td>
+    </tbody>
+</table>

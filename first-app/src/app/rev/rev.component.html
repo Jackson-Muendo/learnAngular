@@ -1,0 +1,65 @@
+
+    <form #login = "ngForm" (ngSubmit) ="Submit(login)">
+        <div class = "form-group">
+            <label for="firstname" name = "firstname">Firstname</label><br>
+            <input type="text" #fname = "ngModel" placeholder="first name" name="firstname" value="" ngModel class="form-control">
+
+        </div><br>
+        <div class = "form-group">
+            <label for="lastname" name = "lastname">Lastname</label><br>
+            <input type="text" #lname placeholder="last name" name="lastname" value="" ngModel class="form-control">
+
+        </div> <br>
+        <div class = "form-group">
+            <label for="email" name = "email">Email</label><br>
+            <input type="text" #email="ngModel" placeholder="email" name="email" value="" ngModel class="form-control">
+
+        </div><br>
+        <div class = "form-group">
+            <label for="password" name = "password">password</label><br>
+            <input type="text" #pass= "ngModel" placeholder="password" name="password" value="" ngModel class="form-control">
+
+        </div><br>
+        <div class = "form-group">
+            <label for="cpassword" name = "cpassword">confirm password </label><br>
+            <input type="text" #cpass = "ngModel" placeholder="confirm password" name="cpassword" value="" ngModel class="form-control">
+
+        </div><br>
+        <div>
+        <button type="submit">Submit</button>
+        </div>
+        </form><br><br>
+        
+        <div><button type="submit" (click)="getthem()">display data</button>
+
+        
+            <table cellpadding="20px">
+                <thead>
+                    <td>
+                        Firstname
+                    </td>
+                    <td>
+                        Lastname
+                    </td>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        password
+                    </td>
+                    <td>confirm password</td>
+                    <td><b>delete</b></td>
+                </thead>
+                <tbody  *ngFor="let x of user">
+                <td>{{x.firstname}}</td>
+                <td> {{x.lastname}} </td>
+                <td> {{x.email}} </td>
+                <td>  {{x.password}} </td>
+                <td>  {{x.cpassword}} </td>
+                <td> <button type="submit" (click)="delete()"><b>X</b></button> </td>
+            
+            </tbody>
+            </table>
+        </div>
+        
+        

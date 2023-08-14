@@ -1,0 +1,18 @@
+div,table{
+    text-align: center;
+    
+}
+::placeholder{
+    color: red;
+    font-weight: 1000px;
+    font-size: large;
+}
+input{
+    width: 30%;
+    padding: 15px 5px;
+    font-size: 20px;
+    
+}
+button{
+    width: 10%;
+}
