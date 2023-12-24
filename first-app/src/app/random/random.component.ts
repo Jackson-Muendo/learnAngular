@@ -21,7 +21,7 @@ addNumbers(k){
   this.b.push(x);
 }
 subNumbers(index){
-  this.b.splice(index,1)
+  this.b.pop()
 }
 incr(){
  for (let a = 0; a < 10000000; a ++)
