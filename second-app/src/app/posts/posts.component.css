@@ -1,0 +1,20 @@
+div{
+    text-align:center;
+    
+}
+input,textarea{
+    width:60%;
+    font-size:20px;
+}
+input{
+    height:40px;
+    
+}
+button{
+    height:40px;
+    width:110px;
+    font-size:30px;
+}
+label{
+    font-size:30px;
+}

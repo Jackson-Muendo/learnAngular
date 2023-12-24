@@ -1,0 +1,25 @@
+<div>
+    <h3><table><tr><td class="league">League</td><td class="match">Match</td><td class="time">Time</td><td class="prob">1</td><td class="prob">X</td><td class="prob">2</td><td class="prob">Tip</td></tr></table></h3> 
+    <h3 *ngFor="let x of info[0]"><table><tr><td class="league">{{x.league.country}} <br> {{x.league.name}}</td> <td class="match">{{x.teams.home.name}} <br>  {{x.teams.away.name}}</td><td class="time">{{x.fixture.date.slice(0,10)}} <br> {{x.fixture.date.slice(11,16)}}</td> <div *ngFor="let y of league40[0].standings"><div *ngIf="x.teams.home.id == y.team.id &&  x.teams.away.id == y.team.id"><td class="prob">{{y.all.played}}</td><td class="prob">25</td><td class="prob">34</td><td class="prob">1</td></div></div> </tr></table> </h3>
+</div>
+<style>
+    table,h3,tr,td{
+        border: 1px solid;
+        width: 100%;
+        border-color: aliceblue;
+    }
+    .league{
+        width: 25%;
+    }
+   .match{
+    width: 35%;
+    text-align: center;
+   }
+   .prob{
+    width: 5%;
+    text-align: center;
+   }
+   .time{
+    width: 7%;
+   }
+</style>

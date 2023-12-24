@@ -1,0 +1,16 @@
+<table>
+   <tr><td>HOME TEAM</td>  <td>score</td> <td>AWAY TEAM</td></tr>
+    <div *ngFor = "let x of datas[0]">
+        <p>{{x.league.country}}----- {{x.league.name}}-----{{x.fixture.status.elapsed}}-----{{x.fixture.status.long}}</p>
+    <tr><td>{{x.teams.home.name}}</td><td>{{x.goals.home}}-{{x.goals.away}}</td><td>{{x.teams.away.name}} </td></tr>
+
+</div>
+</table>
+<style>
+    table{
+        width: 80%;
+        font-size:30px;
+        
+        
+    }
+</style>
