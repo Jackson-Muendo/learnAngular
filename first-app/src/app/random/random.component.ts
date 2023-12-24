@@ -20,7 +20,7 @@ addNumbers(k){
   const x   =Math.floor((Math.random())*100);
   this.b.push(x);
 }
-subNumbers(index){
+subNumbers(){
   this.b.pop()
 }
 incr(){
