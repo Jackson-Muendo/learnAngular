@@ -20,8 +20,8 @@ addNumbers(k){
   const x   =Math.floor((Math.random())*100);
   this.b.push(x);
 }
-subNumbers(){
-  this.b.slice(1)
+subNumbers(index){
+  this.b.slice(index,1)
 }
 incr(){
  for (let a = 0; a < 10000000; a ++)
