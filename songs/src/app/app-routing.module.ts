@@ -9,9 +9,10 @@ const routes: Routes = [
   {path:'',component:RoutesComponent},
   {path:'chapter-201',component:Num1Component},
   {path:'chapter-202',component:Num2Component},
-  {path:'chapter-203',component:Num3Component}
+  {path:'**',component:RoutesComponent}
   
-];
+  
+];{path:'chapter-203',component:Num3Component}
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
